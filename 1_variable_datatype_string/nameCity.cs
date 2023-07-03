@@ -11,6 +11,8 @@ namespace Lab_1
         static void Main(string[] args)
         {
             Console.WriteLine("Yash");
+            Console.WriteLine("7 Ankur Nagar");
+            Console.WriteLine("9428296165");
             Console.WriteLine("Rajkot");
         }
     }
