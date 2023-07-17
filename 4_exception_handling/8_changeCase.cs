@@ -8,13 +8,20 @@ namespace Lab_4
 {
     internal class Program
     {
-        static void Main(string[] args)
+        String oldString = "Yash Khokhar";
+        String newString = "";
+        foreach (char c in oldString)
         {
-            Console.Write("Enter Character : ");
-            Char c = Convert.ToChar(Console.ReadLine());
-
-            Char newChar = c.ToString().ToUpper().ToCharArray()[0];
-            Console.WriteLine("Changed Character : " + newChar);
+            if (Char.IsUpper(c))
+            {
+                newString += c.ToString().ToLower();
+            }
+            else
+            {
+                newString += c.ToString().ToUpper();
+            }
+        }
+        Console.WriteLine("Result = "+newString);
         }
     }
 }
